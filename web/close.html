@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Closing...</title>
+</head>
+<body>
+  <script>
+    window.close();
+    // Como fallback (por si no se cierra), redirige a una página neutra
+    setTimeout(() => {
+      document.body.innerHTML = "You can close this tab.";
+    }, 2000);
+  </script>
+</body>
+</html>

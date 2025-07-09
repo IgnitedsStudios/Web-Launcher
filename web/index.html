@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igniteds Launcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="../media/icon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <video class="background" autoplay muted loop id="bg-video">
+      <source src="../media/background.mp4" type="video/mp4" />
+      Tu navegador no soporta video.
+    </video>
+
+    <div class="content">
+      <header>
+        <img src="../media/logo.png" alt="Logo" class="logo" />
+      </header>
+      <!-- Botón de ajustes -->
+      <button class="settings-btn">
+        <img src="../media/settings.png" alt="Ajustes" />
+      </button>
+
+      <!-- Columna de redes sociales -->
+      <div class="social-column">
+        <a class="socials x" onclick="window.open('https://x.com', '_blank')" target="_blank"
+          ><img src="../media/social/x.png" alt="X"
+        /></a>
+        <a class="socials youtube" onclick="window.open('https://youtube.com', '_blank')" target="_blank"
+          ><img src="../media/social/youtube.png" alt="YouTube"
+        /></a>
+        <a class="socials discord" onclick="window.open('https://discord.com', '_blank')" target="_blank"
+          ><img src="../media/social/discord.png" alt="Discord"
+        /></a>
+        <a class="socials reddit" onclick="window.open('https://reddit.com', '_blank')" target="_blank"
+          ><img src="../media/social/reddit.png" alt="Reddit"
+        /></a>
+        <a class="socials twitch" onclick="window.open('https://twitch.com', '_blank')" target="_blank"
+          ><img src="../media/social/twitch.png" alt="Twitch"
+        /></a>
+      </div>
+
+      <main>
+        <!-- Cuadro de noticias mejorado -->
+        <div class="news-box">
+          <div class="news-content">
+            <div id="news-media" class="news-media">
+              <!-- Aquí se insertará imagen o video dinámicamente -->
+            </div>
+            <b><div id="news-text" class="news-text">Loading...</div></b>
+          </div>
+
+          <div class="news-progress-bar">
+            <div class="news-progress"></div>
+          </div>
+
+          <div class="arrow-container">
+            <button id="prevNews" class="arrow">&lt;</button>
+            <button id="nextNews" class="arrow">&gt;</button>
+          </div>
+        </div>
+
+        <button id="playButton" class="play-btn">
+          <p class="startText">Start</p>
+        </button>
+      </main>
+      <div class="settings-panel" id="settingsPanel">
+        <h2>Settings</h2>
+
+        <label>
+          <input type="checkbox" id="soundToggle" checked />
+          Background Sound
+        </label>
+
+        <label for="volumeControl">Volume:</label>
+        <input
+          type="range"
+          id="volumeControl"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+        />
+
+        <label for="speedControl">Announcements Speed (Seconds):</label>
+        <input type="number" id="speedControl" min="1" max="60" value="15" />
+        <button id="resetSettings">Restore Settings</button>
+        <button id="closeSettings">Close</button>
+      </div>
+    </div>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
