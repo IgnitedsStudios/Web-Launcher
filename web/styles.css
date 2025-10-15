@@ -403,7 +403,7 @@ header {
 .news-progress-bar {
   width: 100%;
   height: 6px;
-  background: rgba(237, 43, 251, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 0 0 12px 12px;
   overflow: hidden;
   margin-top: 4px;
@@ -413,7 +413,7 @@ header {
 .news-progress {
   height: 100%;
   width: 0%;
-  background: #11cb5d;
+  background: #F3498B;
   transition: width 0s linear;
 }
 
