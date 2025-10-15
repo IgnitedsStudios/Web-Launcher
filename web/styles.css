@@ -323,7 +323,7 @@ header {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #11cb5d;
+  color: #F3498B;
 }
 
 /* Estilo para los labels */
@@ -338,7 +338,7 @@ header {
 .settings-panel input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  accent-color: #11cb5d;
+  accent-color: #F3498B;
   cursor: pointer;
   margin-right: 5px;
 }
@@ -358,7 +358,7 @@ header {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #11cb5d;
+  background: #F3498B;
   cursor: pointer;
   border: none;
 }
@@ -367,7 +367,7 @@ header {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #11cb5d;
+  background: #F3498B;
   cursor: pointer;
   border: none;
 }
@@ -386,7 +386,7 @@ header {
 .settings-panel button {
   padding: 0.6rem 1rem;
   border: none;
-  background-color: #11cb5d;
+  background-color: #F3498B;
   color: white;
   font-family: "minecraft-ten";
   font-size: 1rem;
@@ -396,7 +396,7 @@ header {
 }
 
 .settings-panel button:hover {
-  background-color: #0ca94b;
+  background-color: #d23874;
   transform: scale(1.05);
 }
 
