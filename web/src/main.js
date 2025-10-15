@@ -333,7 +333,5 @@ function setEmoji(emoji, size=20) {
 }
 
 function setLink(link, text) {
-  return `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>`;
+  return isMobile() ? `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>` : `<a class='link' onclick='window.open("${link}", "_self")'>${text}</a>`;
 }
-
-alert(isMobile());
