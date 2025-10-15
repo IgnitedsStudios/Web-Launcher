@@ -321,7 +321,7 @@ function openMinecraft() {
   const { ip, port } = server;
   const url = `minecraft://connect?serverUrl=${ip}&serverPort=${port}`;
   setTimeout(() => {
-    window.open(url, '_self');
+    window.open(url, isMobile() ? '_self' : '_blank');
     setTimeout(() => {
       startBtn.blur();
     }, 2000);
@@ -333,5 +333,6 @@ function setEmoji(emoji, size=20) {
 }
 
 function setLink(link, text) {
-  return `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>`;
+  const target = isMobile() ? '_self' : '_blank';
+  return `<a class='link' onclick='window.open("${link}", "${target}")'>${text}</a>`;
 }
