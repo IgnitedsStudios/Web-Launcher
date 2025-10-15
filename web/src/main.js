@@ -29,12 +29,12 @@ const newsList = [
   {
     type: "image",
     src: "element1.png",
-    text: `${setEmoji(emoji.gift)} Many rewards are expected this week!`
+    text: `Meet: ¡Marcopolo! 🌊🤿${setLink('https://x.com/squidbedrock', '#SquidBedrock2 @squidbedrock')}`
   },
   {
     type: "image",
     src: "element2.png",
-    text: `The new Minecraft 1.21.90 update is now available! Check out the new changes ${setLink(link.mcUpdate12190, 'here')}`,
+    text: `¿Listos para una segunda oportunidad? ❄️🦑`,
   },
   {
     type: "image",
