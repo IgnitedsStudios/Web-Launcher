@@ -336,4 +336,4 @@ function setLink(link, text) {
   return `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>`;
 }
 
-console.log(isMobile());
+alert(isMobile());
