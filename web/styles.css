@@ -36,8 +36,8 @@ body {
 
 a {
   cursor: pointer;
-  text-decoration-color: rgb(60, 133, 39);
-  color: rgb(60, 133, 39);
+  text-decoration-color: #F3498B;
+  color: #F3498B;
 }
 
 #bg-video {
