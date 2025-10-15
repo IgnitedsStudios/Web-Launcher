@@ -334,5 +334,13 @@ function setEmoji(emoji, size=20) {
 }
 
 function setLink(link, text) {
-  return isMobile() ? `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>` : `<a class='link' onclick='window.open("${link}", "_self")'>${text}</a>`;
+  return `<a class='link' onclick='copyToClipboard("${link}")'>${text}</a>`;
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert(`Copiado al portapapeles: ${text}`);
+  }).catch((err) => {
+    console.error('Failed to copy: ', err);
+  });
 }
