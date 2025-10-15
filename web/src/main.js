@@ -29,12 +29,12 @@ const newsList = [
   {
     type: "image",
     src: "element1.png",
-    text: `Meet: ¡Marcopolo! 🌊🤿${setLink('https://x.com/squidbedrock', '#SquidBedrock2 @squidbedrock')}`
+    text: `${setEmoji(emoji.gift)} Many rewards are expected this week!`
   },
   {
     type: "image",
     src: "element2.png",
-    text: `¿Listos para una segunda oportunidad? ❄️🦑`,
+    text: `The new Minecraft 1.21.90 update is now available! Check out the new changes ${setLink(link.mcUpdate12190, 'here')}`,
   },
   {
     type: "image",
@@ -321,7 +321,7 @@ function openMinecraft() {
   const { ip, port } = server;
   const url = `minecraft://connect?serverUrl=${ip}&serverPort=${port}`;
   setTimeout(() => {
-    window.open(url, isMobile() ? '_self' : '_blank');
+    window.open(url, '_self');
     setTimeout(() => {
       startBtn.blur();
     }, 2000);
@@ -333,6 +333,5 @@ function setEmoji(emoji, size=20) {
 }
 
 function setLink(link, text) {
-  const target = isMobile() ? '_self' : '_blank';
-  return `<a class='link' onclick='window.open("${link}", "${target}")'>${text}</a>`;
+  return `<a class='link' onclick='window.open("${link}", "_blank")'>${text}</a>`;
 }
