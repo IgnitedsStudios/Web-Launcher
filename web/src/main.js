@@ -1,8 +1,8 @@
 // ========== 📦 VARIABLES ==========
 const root = "../media/updates/";
 const server = {
-  ip: "server.cprot.net",
-  port: 25570,
+  ip: "128.0.0",
+  port: 19128,
 };
 
 const emojiPath = (name) => `../media/emojis/${name}.png`;
