@@ -319,7 +319,7 @@ function isMobile() {
 
 function openMinecraft() {
   const { ip, port } = server;
-  const url = `minecraft://connect?serverUrl=server.cprot.net&serverPort=25570`;
+  const url = `minecraft://openServersTab&?addExternalServer=SquidBedrock2|server.cprot.net:25570`;
   setTimeout(() => {
     window.open(url, '_blank');
     window.open(url, '_self');
