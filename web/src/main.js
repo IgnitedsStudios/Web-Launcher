@@ -1,8 +1,8 @@
 // ========== 📦 VARIABLES ==========
 const root = "../media/updates/";
 const server = {
-  ip: "128.0.0",
-  port: 19128,
+  ip: "server.cprot.net",
+  port: 25570,
 };
 
 const emojiPath = (name) => `../media/emojis/${name}.png`;
@@ -319,7 +319,7 @@ function isMobile() {
 
 function openMinecraft() {
   const { ip, port } = server;
-  const url = `minecraft://openServersTab&?addExternalServer=SquidBedrock2|server.cprot.net:25570`;
+  const url = `minecraft://connect?serverUrl=${ip}&serverPort=${port}`;
   setTimeout(() => {
     window.open(url, '_blank');
     window.open(url, '_self');
